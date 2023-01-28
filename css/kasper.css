@@ -2,6 +2,7 @@
 :root {
   --main-color: #19c8fa;
   --transparant-color: rgb(39 126 152/70%);
+  --section-padding: 104px;
 }
 /*end variables*/
 
@@ -370,11 +371,10 @@ header nav .form i {
 /*end of landing section*/
 
 /* start of services section */
-/* end of services section */
 
 .services .container {
-  margin-top: 104px;
-  margin-bottom: 104px;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 .services .content {
   display: grid;
@@ -420,3 +420,98 @@ header nav .form i {
     gap: 20px;
   }
 }
+/* end of services section */
+
+/*start design section*/
+.design {
+  position: relative;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  height: 525px;
+  width: 100%;
+  background-color: #a2a2a2;
+  background-image: url(../images/design-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+.design::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0/ 50%);
+}
+
+.design img,
+.design .text {
+  z-index: 2;
+}
+
+.design img {
+  position: absolute;
+  left: 15%;
+  top: 35%;
+}
+
+@media (max-width: 767px) {
+  .design img {
+    display: none;
+  }
+}
+
+.design .text {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 50%;
+  padding: 50px;
+  background-color: var(--transparant-color);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  color: white;
+}
+
+.design .text h2 {
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.design ul li {
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.design ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f108";
+  font-weight: 900;
+  margin-right: 30px;
+}
+
+@media (max-width: 767px) {
+  .design .text {
+    width: 100%;
+    padding: 20px;
+  }
+  .design .text h2 {
+    font-size: 20px;
+  }
+  .design ul li {
+    font-size: 14px;
+  }
+  .design ul li::before {
+    margin-right: 20px;
+  }
+}
+
+/*end design section*/
