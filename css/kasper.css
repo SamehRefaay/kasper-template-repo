@@ -667,7 +667,7 @@ a.gone {
 }
 
 .video .text {
-  padding: 30px;
+  padding: 50px 0;
   position: absolute;
   width: 100%;
   top: 50%;
@@ -702,3 +702,32 @@ a.gone {
   padding: 10px 20px;
   text-transform: uppercase;
 }
+/* end video section */
+
+/* start about us section */
+.about {
+  padding-top: var(--section-padding);
+  overflow: hidden;
+}
+
+.about img {
+  position: relative;
+  bottom: -120px;
+  margin-top: -60px;
+  left: 50%;
+  max-width: 100%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+  .about img {
+    bottom: -60px;
+    margin-top: -30px;
+  }
+}
+/* end about us section */
+
