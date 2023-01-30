@@ -847,5 +847,198 @@ a.gone {
   font-size: 16px;
   font-weight: normal;
 }
+/* Etart Statistics Section */
 
-/* Start Statistics Section */
+/* Start Skills Section */
+.skills {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.skills .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .skills .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.skills .container > div {
+  flex-basis: 100%;
+}
+
+@media (min-width: 992px) {
+  .skills .container > div {
+    flex-basis: 45%;
+  }
+}
+
+.skills .container > div > h3 {
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.skills .container > div > p {
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 50px;
+  color: #777;
+}
+
+.skills .testimonials .box {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .skills .testimonials .box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.skills .testimonials .box .img-container {
+  position: relative;
+  min-width: 20%;
+  margin-right: 60px;
+}
+
+.skills .testimonials .box .img-container::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.skills .testimonials .box .img-container img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.skills .testimonials .box .text {
+  border-bottom: 1px solid #a2a2a2;
+  padding: 10px;
+}
+
+.skills .testimonials .box .text p {
+  line-height: 1.8;
+}
+
+.skills .testimonials .box .text h4 {
+  text-align: right;
+  color: #777;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.skills .testimonials .bullets {
+  width: 50px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto 0;
+}
+
+.skills .testimonials .bullets li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #777;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.skills .testimonials .bullets li.active {
+  border-color: var(--main-color);
+  background-color: var(--main-color);
+}
+
+.skills .our-skills {
+  display: flex;
+  flex-direction: column;
+}
+.skills .our-skills .skills-container {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skills .our-skills .skill h4 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.skills .our-skills .skill .progress {
+  width: 100%;
+  height: 25px;
+  background-color: #dedadc;
+}
+
+.skills .our-skills .skill .progress span {
+  position: relative;
+  display: block;
+  background-color: var(--main-color);
+  height: 100%;
+}
+
+.skills .our-skills .skill .progress span::before {
+  content: attr(data-skill);
+  position: absolute;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  right: 0;
+  top: 0;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transform: translateX(50%) translateY(-125%);
+  -webkit-transform: translateX(50%) translateY(-125%);
+  -moz-transform: translateX(50%) translateY(-125%);
+  -ms-transform: translateX(50%) translateY(-125%);
+  -o-transform: translateX(50%) translateY(-125%);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.skills .our-skills .skill .progress span::after {
+  content: "";
+  position: absolute;
+  border: 10px solid;
+  width: 0;
+  height: 0;
+  right: 0;
+  top: 0;
+  border-color: black transparent transparent;
+  transform: translateX(50%) translateY(-50%);
+  -webkit-transform: translateX(50%) translateY(-50%);
+  -moz-transform: translateX(50%) translateY(-50%);
+  -ms-transform: translateX(50%) translateY(-50%);
+  -o-transform: translateX(50%) translateY(-50%);
+}
+
+/* End Skills Section */
