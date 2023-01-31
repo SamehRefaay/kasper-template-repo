@@ -41,7 +41,7 @@ function addNewPortfolioImages(images = [], type = "") {
       const box = document.createElement("div");
       box.classList.add("box");
       box.innerHTML = `
-    <img src="images/${images[i]}.jpg" alt="${images[i]}" />
+    <img class="img-resizer" src="images/${images[i]}.jpg" alt="${images[i]}" />
     <div class="caption">
       <h4>Awesome Image</h4>
       <p>${type}</p>
