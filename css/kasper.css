@@ -1430,3 +1430,48 @@ a.gone {
   font-style: normal;
 }
 /* End Contact Section */
+/* Start Footer Section */
+.footer {
+  position: relative;
+  padding-top: calc(var(--section-padding) / 2);
+  padding-bottom: calc(var(--section-padding) / 2);
+  background-image: url(../images/subscribe-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.footer::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0/ 70%);
+}
+.footer .container {
+  position: relative;
+}
+.footer p:first-of-type {
+  padding: 20px;
+  border-bottom: 1px solid #dedadc;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  width: fit-content;
+  margin: 30px auto 20px;
+}
+.footer .social-icons i {
+  padding: 0 15px;
+}
+.footer p.copy-right {
+  margin-top: 50px;
+}
+.footer p span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+/* End Footer Section */
