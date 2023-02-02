@@ -1315,5 +1315,118 @@ a.gone {
     border: 1px solid white;
   }
 }
-
 /* End Subscribe Section */
+/* Start Contact Section */
+.contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.contact .content {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .contact .content {
+    flex-direction: column-reverse;
+    gap: 30px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .contact .content {
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+}
+.contact .content form {
+  flex-basis: 70%;
+}
+@media (max-width: 767px) {
+  .contact .content form {
+    width: 100%;
+  }
+}
+.contact .content form .main-input {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #dedadc;
+}
+@media (max-width: 767px) {
+  .contact .content form .main-input {
+    padding: 10px 20px;
+  }
+}
+.contact .content form .main-input::placeholder {
+  text-transform: uppercase;
+}
+.contact .content form .main-input:focus {
+  outline: none;
+}
+.contact .content form textarea.main-input {
+  height: 200px;
+}
+.contact .content form input[type="submit"] {
+  padding: 20px;
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+  text-transform: uppercase;
+  display: flex;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .contact .content form input[type="submit"] {
+    padding: 10px;
+  }
+}
+.contact .content .info {
+  flex-basis: 25%;
+}
+
+@media (max-width: 767px) {
+  .contact .content .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 575px) {
+  .contact .content .info {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
+.contact .content .info .phone-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .content .info h4 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.contact .content .info .phone-info span {
+  display: block;
+  margin-bottom: 10px;
+  color: #777;
+}
+.contact .content .info .address-info h4 {
+  margin-top: 80px;
+}
+@media (max-width: 767px) {
+  .contact .content .info .address-info h4 {
+    margin-top: 0px;
+  }
+}
+.contact .content .info .address-info address {
+  line-height: 1.8;
+  color: #777;
+  font-style: normal;
+}
+/* End Contact Section */
