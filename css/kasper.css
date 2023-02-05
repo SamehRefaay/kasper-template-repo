@@ -378,16 +378,16 @@ header nav .form i {
 .services .content {
   display: grid;
   margin-top: 80px;
-  row-gap: 60px;
-  column-gap: 60px;
-  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  row-gap: 50px;
+  column-gap: 50px;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
   grid-template-rows: auto auto;
 }
 
 .services .content .service-card {
   display: flex;
   flex-direction: row;
-  gap: 60px;
+  gap: 30px;
   border: 1px solid #777;
 }
 
