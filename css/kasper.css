@@ -387,8 +387,7 @@ header nav .form i {
 .services .content .service-card {
   display: flex;
   flex-direction: row;
-  gap: 30px;
-  border: 1px solid #777;
+  gap: 25px;
 }
 
 .services .service-card i {
